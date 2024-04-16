@@ -8,6 +8,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {},
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
 export default config;
