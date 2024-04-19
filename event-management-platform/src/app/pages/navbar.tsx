@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect } from "react";
 import { SignedOut, UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -45,15 +46,14 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-blue-900">
       <div>
-        <h1 className="text-3xl font-signature ml-2">
-          <a
-            className="link-underline link-underline-black bg-blue-400 rounded-md"
-            href="/"
-            rel="home"
-          >
-            aE<span className="text-blue-700">.</span>
-          </a>
-        </h1>
+        <Link href="/" rel="home">
+          <Image
+            src="/assets/navbar.png"
+            alt="logoFooter"
+            width={200}
+            height={30}
+          ></Image>
+        </Link>
       </div>
       <div>
         <ul className="hidden md:flex">
@@ -103,13 +103,13 @@ const Navbar = () => {
           </button>
         </form>
       </div>
-      <div className="xl:m-10">
+      <div className="xl:m-10 m-2">
         <UserButton afterSignOutUrl="/" />
       </div>
       <SignedOut>
         <Button
           asChild
-          className="rounded-full flex xl:m-5"
+          className="rounded-full flex xl:m-5 m-2"
           variant="secondary"
           size="sm"
         >
