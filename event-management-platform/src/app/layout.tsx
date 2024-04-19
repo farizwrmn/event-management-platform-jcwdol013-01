@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "./pages/navbar";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
@@ -16,11 +17,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={quicksand.className}>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider
+      publishableKey="pk_test_aGVscGluZy1tb25rZmlzaC02Ny5jbGVyay5hY2NvdW50cy5kZXYk"
+      appearance={{
+        layout: {
+          socialButtonsPlacement: "bottom",
+        },
+      }}
+    >
+      <html lang="en">
+        <body className={quicksand.className}>
+          <Navbar />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
