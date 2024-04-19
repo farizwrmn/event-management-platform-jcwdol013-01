@@ -10,7 +10,7 @@ const Footer = () => {
           alt="logoFooter"
           width={119}
           height={38}
-          className="mx-auto"
+          className="mx-auto border-b border-cyan-400"
         ></Image>
         <p>2024 askEvent. All Rights Reserved.</p>
       </div>

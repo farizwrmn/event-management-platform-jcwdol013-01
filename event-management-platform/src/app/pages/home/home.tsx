@@ -12,26 +12,6 @@ const LandingPage: React.FC = () => {
           for you so you don't missed out
         </p>
       </div>
-
-      <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-          Welcome to askEvent
-        </h1>
-        <p className=" text-lg font-normal text-gray-300 lg:text-xl  sm:px-16 lg:px-48">
-          We help you find any Events based on your location and book the ticket
-          for you so you don't missed out
-        </p>
-      </div>
-
-      <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-          Welcome to askEvent
-        </h1>
-        <p className=" text-lg font-normal text-gray-300 lg:text-xl  sm:px-16 lg:px-48">
-          We help you find any Events based on your location and book the ticket
-          for you so you don't missed out
-        </p>
-      </div>
     </section>
   );
 };
