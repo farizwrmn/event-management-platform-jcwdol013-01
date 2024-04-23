@@ -77,7 +77,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> 
       <div>
         <form className="flex items-center">
           <label htmlFor="voice-search" className="sr-only">
