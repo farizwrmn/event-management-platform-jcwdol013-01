@@ -1,10 +1,9 @@
-import Footer from "./pages/Footer";
-import LandingPage from "./pages/home/home";
+import Hero from "./pages/home/Hero";
 
 export default function Home() {
   return (
     <>
-      <LandingPage />
+      <Hero />
     </>
   );
 }
