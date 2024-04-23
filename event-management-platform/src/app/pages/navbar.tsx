@@ -118,13 +118,13 @@ const Navbar = () => {
       </SignedOut>
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-0 z-10 text-white-500 md:hidden"
+        className="cursor-pointer pr-0 z-20 text-white-500 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-blue-900 to-gray-800 text-white-500 ">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-blue-900 to-gray-800 text-white-500 z-10">
           <div className="text-center px-16 place-content-center">
             <div>
               <form className="flex items-center pb-10">
