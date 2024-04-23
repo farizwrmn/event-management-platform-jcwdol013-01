@@ -1,9 +1,11 @@
-import LandingPage from "./pages/home/home";
+import CardBlog from "./pages/home/EventCard";
+import Hero from "./pages/home/Hero";
 
 export default function Home() {
   return (
     <>
-      <LandingPage />
+      <Hero />
+      <CardBlog />
     </>
   );
 }
