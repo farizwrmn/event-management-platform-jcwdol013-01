@@ -29,7 +29,7 @@ export default function CardBlog() {
                   </header>
                   <p>$ 220</p>
                 </div>
-                <p className="border-t text-center p-2 mt-20">
+                <p className="border-t text-center p-5 mt-10">
                   by Production House
                 </p>
               </Link>
@@ -52,7 +52,7 @@ export default function CardBlog() {
                   </header>
                   <p>$ 40</p>
                 </div>
-                <p className="border-t text-center p-2 mt-20">by Anwar Joko</p>
+                <p className="border-t text-center p-5 mt-10">by Anwar Joko</p>
               </Link>
             </div>
             <div className="overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200 col-span-4 lg:col-span-2">
@@ -73,7 +73,7 @@ export default function CardBlog() {
                   </header>
                   <p>$ 40</p>
                 </div>
-                <p className="border-t text-center p-2 mt-20">
+                <p className="border-t text-center p-5 mt-10">
                   by Nolan Christoper
                 </p>
               </Link>
@@ -96,7 +96,7 @@ export default function CardBlog() {
                   </header>
                   <p>$ 37</p>
                 </div>
-                <p className="border-t text-center p-2 mt-20">
+                <p className="border-t text-center p-5 mt-10">
                   by Mark Wahlberg
                 </p>
               </Link>
