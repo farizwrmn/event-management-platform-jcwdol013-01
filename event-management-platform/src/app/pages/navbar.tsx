@@ -18,7 +18,7 @@ const Navbar = () => {
     },
     {
       id: 2,
-      link: "about",
+      link: "About",
     },
     {
       id: 3,
@@ -109,7 +109,7 @@ const Navbar = () => {
       <SignedOut>
         <Button
           asChild
-          className="rounded-full flex xl:m-5 m-2"
+          className="rounded-lg flex xl:m-5 m-2"
           variant="secondary"
           size="sm"
         >
