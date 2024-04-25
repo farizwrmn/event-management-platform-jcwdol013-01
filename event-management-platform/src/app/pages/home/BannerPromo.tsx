@@ -13,8 +13,8 @@ export default function BannerPromo() {
           />
         </Link>
       </div>
-      <header className="text-2xl font-bold font-mono -mb-10 text-white ml-5 lg:ml-10">
-        Trendings..
+      <header className="text-2xl font-bold font-mono -mb-10 text-white ml-5 lg:ml-10 underline">
+        #Top Picked
       </header>
       <div className="bg-blue-900 justify-between lg:flex lg:pt-25 pt-16 pb-10">
         <div className="flex">
@@ -53,6 +53,15 @@ export default function BannerPromo() {
             />
           </Link>
         </div>
+      </div>
+      <div className="lg:p-20 p-2 mt-10 mb-12">
+        <Link href="/">
+          <img
+            className="relative w-full rounded-2xl h-40 object-cover  shadow-2xl"
+            src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29uY2VydCUyMGNyb3dkfGVufDB8fDB8fHww"
+            alt="movies"
+          />
+        </Link>
       </div>
     </>
   );
