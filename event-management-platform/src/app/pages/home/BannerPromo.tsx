@@ -16,7 +16,7 @@ export default function BannerPromo() {
       <header className="text-2xl font-bold font-mono -mb-10 text-white ml-5 lg:ml-10">
         Trendings..
       </header>
-      <div className="bg-blue-900 justify-between lg:flex lg:pt-25 pt-16">
+      <div className="bg-blue-900 justify-between lg:flex lg:pt-25 pt-16 pb-10">
         <div className="flex">
           <Fa1 size={120} color="white" className="lg:mt-16 mt-10" />
           <Link href="/">
