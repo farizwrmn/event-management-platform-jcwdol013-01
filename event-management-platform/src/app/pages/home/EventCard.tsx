@@ -5,7 +5,7 @@ import React from "react";
 export default function CardBlog() {
   return (
     <>
-      <section>
+      <section className="pb-10">
         <div className="container px-6 m-auto">
           <header className="text-2xl font-semibold pt-10 font-mono pb-2">
             Now Showing
