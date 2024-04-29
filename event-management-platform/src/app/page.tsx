@@ -1,6 +1,6 @@
-import CardBlog from "./pages/home/EventCard";
-import Hero from "./pages/home/Hero";
-import BannerPromo from "./pages/home/BannerPromo";
+import CardBlog from "./pages/Home/EventCard";
+import Hero from "./pages/Home/Hero";
+import BannerPromo from "./pages/Home/BannerPromo";
 
 export default function Home() {
   return (

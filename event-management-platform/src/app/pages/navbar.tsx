@@ -26,7 +26,7 @@ const Navbar = () => {
     },
     {
       id: 5,
-      link: "Contact us",
+      link: "Contact",
     },
   ];
 
