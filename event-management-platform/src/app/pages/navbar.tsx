@@ -48,7 +48,7 @@ const Navbar = () => {
       <div>
         <Link href="/" rel="home">
           <Image
-            src="/assets/navbar.png"
+            src={`/assets/images/navbar.png`}
             alt="logoFooter"
             width={200}
             height={30}
