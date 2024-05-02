@@ -34,7 +34,6 @@ export default function RootLayout({
           <br />
           <br />
           <br />
-          <br />
           <Footer />
         </body>
       </html>
