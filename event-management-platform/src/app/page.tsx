@@ -1,5 +1,5 @@
 import CardBlog from "./pages/Home/EventCard";
-import Hero from "./pages/Home/Hero";
+import Hero from "./pages/Home/EventCard";
 import BannerPromo from "./pages/Home/BannerPromo";
 import Collection from "@/components/shared/Collection";
 import { getAllEvents } from "@/lib/actions/event.action";
