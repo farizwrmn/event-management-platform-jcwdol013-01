@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Glide from "@glidejs/glide";
 
-export default function SliderIndicatorsControlsInside() {
+export default function Hero() {
   useEffect(() => {
     const slider = new Glide(".glide-05", {
       type: "slider",

@@ -1,8 +1,8 @@
-import CardBlog from "./pages/Home/EventCard";
 import Hero from "./pages/Home/Hero";
 import BannerPromo from "./pages/Home/BannerPromo";
 import Collection from "@/components/shared/Collection";
 import { getAllEvents } from "@/lib/actions/event.action";
+import EventCard from "./pages/Home/EventCard";
 
 export default async function Home() {
   const events = await getAllEvents({
@@ -25,7 +25,7 @@ export default async function Home() {
         totalPages={2}
       />
 
-      <CardBlog />
+      <EventCard />
       <BannerPromo />
     </>
   );
