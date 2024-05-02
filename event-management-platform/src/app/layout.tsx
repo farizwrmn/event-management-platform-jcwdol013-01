@@ -30,6 +30,11 @@ export default function RootLayout({
         <body className={quicksand.className}>
           <Navbar />
           {children}
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <Footer />
         </body>
       </html>
