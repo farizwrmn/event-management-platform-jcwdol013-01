@@ -3,8 +3,6 @@ import BannerPromo from "./pages/Home/BannerPromo";
 import Collection from "@/components/shared/Collection";
 import { getAllEvents } from "@/lib/actions/event.action";
 import { SearchParamProps } from "@/types";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default async function Home({ searchParams }: SearchParamProps) {
   const page = Number(searchParams?.page) || 1;
@@ -29,15 +27,10 @@ export default async function Home({ searchParams }: SearchParamProps) {
         emptyTitle="No Events Found."
         emptyStateSubtext="Come back later"
         collectionType="All_Events"
-        limit={4}
-        page={1}
-        totalPages={1}
+        limit={3}
+        page={page}
+        totalPages={events?.totalPages}
       />
-      <div className="text-center p-10 border-b">
-        <Button variant="outline" className=" rounded-full" size="lg">
-          <Link href="/Events">Show more..</Link>
-        </Button>
-      </div>
       <BannerPromo />
     </>
   );

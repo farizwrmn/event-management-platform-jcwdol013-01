@@ -12,7 +12,7 @@ const Events = async ({ searchParams }: SearchParamProps) => {
     query: searchText,
     category,
     page,
-    limit: 10,
+    limit: 8,
   });
   return (
     <div>
@@ -25,9 +25,9 @@ const Events = async ({ searchParams }: SearchParamProps) => {
         emptyTitle="No Events Found."
         emptyStateSubtext="Come back later"
         collectionType="All_Events"
-        limit={4}
-        page={1}
-        totalPages={1}
+        limit={3}
+        page={page}
+        totalPages={events?.totalPages}
       />
     </div>
   );
