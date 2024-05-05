@@ -10,6 +10,9 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "askEvent",
   description: "Event Finder Web App",
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({

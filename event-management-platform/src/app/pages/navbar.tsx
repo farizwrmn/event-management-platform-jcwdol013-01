@@ -44,7 +44,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-blue-900">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-cyan-500 to-blue-800">
       <div>
         <Link href="/" rel="home">
           <Image
@@ -73,7 +73,7 @@ const Navbar = () => {
       <SignedOut>
         <Button
           asChild
-          className="rounded-lg flex xl:m-5 m-2"
+          className="rounded-full flex xl:m-5 m-2 p-5"
           variant="secondary"
           size="sm"
         >
@@ -88,7 +88,7 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-blue-900 to-gray-800 text-white-500 z-10">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-cyan-500 to-blue-800 text-white-500 z-10">
           <div className="text-center px-16 place-content-center">
             {links.map(({ id, link }) => (
               <li
@@ -107,6 +107,7 @@ const Navbar = () => {
                   className="rounded-full text-xl my-10"
                   size="lg"
                   variant="secondary"
+                  onClick={() => setNav(!nav)}
                 >
                   <Link href="/sign-in">Login</Link>
                 </Button>

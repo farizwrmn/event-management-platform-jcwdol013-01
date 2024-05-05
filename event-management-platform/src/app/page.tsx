@@ -19,7 +19,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
   return (
     <>
       <Hero />
-      <div className="p-5 text-center lg:text-start border-b">
+      <div className="text-center lg:text-start border-b wrapper mb-10">
         <h3 className="h3-bold">Now Showing</h3>
       </div>
       <Collection
