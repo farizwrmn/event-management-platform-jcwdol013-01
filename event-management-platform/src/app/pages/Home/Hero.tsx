@@ -21,9 +21,7 @@ export default function Hero() {
 
   return (
     <>
-      {/*<!-- Component: Slider with indicators & controls inside --> */}
       <div className="relative w-full glide-05">
-        {/*    <!-- Slides --> */}
         <div
           className="overflow-hidden h-30 m-5 rounded-2xl lg:m-14 lg:h-80"
           data-glide-el="track"
@@ -55,13 +53,12 @@ export default function Hero() {
             </li>
           </ul>
         </div>
-        {/*    <!-- Controls --> */}
         <div
           className="absolute left-0 px-6 flex items-center justify-between w-full h-0 lg:px-24 top-1/2 "
           data-glide-el="controls"
         >
           <button
-            className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-slate-700 bg-white/20 text-slate-700 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-grey-600 bg-transparent text-grey-600 hover:border-white hover:text-white focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir="<"
             aria-label="prev slide"
           >
@@ -82,7 +79,7 @@ export default function Hero() {
             </svg>
           </button>
           <button
-            className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-slate-700 bg-white/20 text-slate-700 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-grey-600 bg-transparent text-grey-600 hover:border-white hover:text-white focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir=">"
             aria-label="next slide"
           >
@@ -103,42 +100,7 @@ export default function Hero() {
             </svg>
           </button>
         </div>
-        {/*    <!-- Indicators --> */}
-        <div
-          className="absolute bottom-0 flex items-center justify-center w-full gap-2"
-          data-glide-el="controls[nav]"
-        >
-          <button
-            className="p-4 group"
-            data-glide-dir="=0"
-            aria-label="goto slide 1"
-          >
-            <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
-          </button>
-          <button
-            className="p-4 group"
-            data-glide-dir="=1"
-            aria-label="goto slide 2"
-          >
-            <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
-          </button>
-          <button
-            className="p-4 group"
-            data-glide-dir="=2"
-            aria-label="goto slide 3"
-          >
-            <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
-          </button>
-          <button
-            className="p-4 group"
-            data-glide-dir="=3"
-            aria-label="goto slide 4"
-          >
-            <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
-          </button>
-        </div>
       </div>
-      {/*<!-- End Slider with indicators & controls inside --> */}
     </>
   );
 }

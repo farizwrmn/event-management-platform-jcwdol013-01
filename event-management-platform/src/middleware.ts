@@ -16,6 +16,7 @@ export default authMiddleware({
     "/About",
     "/Explore",
     "/Contact",
+    "/assets/icons/search.svg",
   ],
   ignoredRoutes: [
     "/api/webhook/clerk",
