@@ -21,7 +21,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
   return (
     <>
       <Hero />
-      <div className="p-5 bg-dotted-pattern bg-cover text-center lg:text-start">
+      <div className="p-5 text-center lg:text-start border-b">
         <h3 className="h3-bold">Now Showing</h3>
       </div>
       <Collection
@@ -33,7 +33,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
         page={1}
         totalPages={1}
       />
-      <div className="text-center p-10">
+      <div className="text-center p-10 border-b">
         <Button variant="outline" className=" rounded-full" size="lg">
           <Link href="/Events">Show more..</Link>
         </Button>
