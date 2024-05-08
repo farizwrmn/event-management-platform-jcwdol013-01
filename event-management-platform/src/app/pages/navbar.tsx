@@ -141,6 +141,7 @@ const Navbar = () => {
                     <Link
                       href="/profile"
                       className="cursor-pointer capitalize text-2xl hover:scale-105 hover:text-white duration-200 link-underline sm:flex"
+                      onClick={() => setNav(!nav)}
                     >
                       Dashboard
                     </Link>
