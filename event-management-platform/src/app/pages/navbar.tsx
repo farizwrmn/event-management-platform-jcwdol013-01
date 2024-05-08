@@ -90,7 +90,7 @@ const Navbar = () => {
                 href="/profile"
                 className="cursor-pointer capitalize text-2xl hover:scale-105 hover:text-white duration-200 link-underline hidden sm:flex bg-gradient-to-tr"
               >
-                My Profile
+                Dashboard
               </Link>
             </Button>
           </SignedIn>
@@ -143,7 +143,7 @@ const Navbar = () => {
                       className="cursor-pointer capitalize text-2xl hover:scale-105 hover:text-white duration-200 link-underline sm:flex bg-gradient-to-r"
                       onClick={() => setNav(!nav)}
                     >
-                      My Profile
+                      Dashboard
                     </Link>
                   </Button>
                 </SignedIn>
