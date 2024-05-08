@@ -28,7 +28,7 @@ export default function Hero() {
           data-glide-el="track"
         >
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-            <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F3cf7043f-d683-44c7-a85d-5e84684db0ce-1x9zwa.png&w=2048&q=75)] xl:h-[340px] w-[600px] relative bg-cover">
+            <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F3cf7043f-d683-44c7-a85d-5e84684db0ce-1x9zwa.png&w=2048&q=75)] xl:h-[340px] h-[240px] w-[600px] relative bg-cover">
               <Link
                 href="https://event-management-platform-jcwdol013-01.vercel.app/events/6634c99fc9a7245c27a435cf"
                 className="absolute bottom-0 px-4 py-3 bg-gray-800/50 w-full h-full"
@@ -43,7 +43,7 @@ export default function Hero() {
                 </p>
               </Link>
             </div>
-            <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2Fd29d50ce-0537-4af9-8144-437b92fc24d9-gel4mw.webp&w=2048&q=75)] xl:h-[340px] w-[600px] relative bg-cover">
+            <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2Fd29d50ce-0537-4af9-8144-437b92fc24d9-gel4mw.webp&w=2048&q=75)] xl:h-[340px] h-[240px] w-[600px] relative bg-cover">
               <Link
                 href="https://event-management-platform-jcwdol013-01.vercel.app/events/6634c99fc9a7245c27a435cf"
                 className="absolute bottom-0 px-4 py-3 bg-gray-800/50 w-full h-full"
@@ -58,12 +58,12 @@ export default function Hero() {
                 </p>
               </Link>
             </div>
-            <div className="bg-[url(http://localhost:3000/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2Fbf27d256-37e9-443e-a8ac-000e74bc5fe6-xw6i34.jpg&w=2048&q=75)] xl:h-[340px] w-[600px] relative bg-cover">
+            <div className="bg-[url(http://localhost:3000/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2Fbf27d256-37e9-443e-a8ac-000e74bc5fe6-xw6i34.jpg&w=2048&q=75)] xl:h-[340px] h-[240px] w-[600px] relative bg-cover">
               <Link
                 href="https://event-management-platform-jcwdol013-01.vercel.app/events/66362c0f737866729784306b"
                 className="absolute bottom-0 px-4 py-3 bg-gray-800/50 w-full h-full"
               >
-                <h1 className="text-white font-semibold text-4xl text-center h1-bold xl:pt-20">
+                <h1 className="text-white font-semibold text-4xl text-center h1-semibold xl:h1-bold xl:pt-20">
                   {" "}
                   Tokyo Cyber Punk{" "}
                 </h1>
@@ -73,12 +73,12 @@ export default function Hero() {
                 </p>
               </Link>
             </div>
-            <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F6666db8e-9929-4129-b112-ede5df4595f0-3b1omg.jpg&w=2048&q=75)] xl:h-[340px] w-[600px] relative bg-cover">
+            <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F6666db8e-9929-4129-b112-ede5df4595f0-3b1omg.jpg&w=2048&q=75)] xl:h-[340px] h-[240px] w-[600px] relative bg-cover">
               <Link
                 href="https://event-management-platform-jcwdol013-01.vercel.app/events/6636116e927b558a7f44ee80"
                 className="absolute bottom-0 px-4 py-3 bg-gray-800/50 w-full h-full"
               >
-                <h1 className="text-white font-semibold text-4xl text-center h1-bold xl:pt-20">
+                <h1 className="text-white font-semibold text-4xl text-center h1-semibold xl:h1-bold xl:pt-20">
                   {" "}
                   Japan Foundation{" "}
                 </h1>
