@@ -4,9 +4,10 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect } from "react";
-import { SignedOut, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { userId } from "@/lib/actions/clerk.profile";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -25,7 +26,7 @@ const Navbar = () => {
       link: "Explore",
     },
     {
-      id: 5,
+      id: 4,
       link: "Contact",
     },
   ];
@@ -67,7 +68,35 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <div className="xl:m-10 m-2">
+      <div>
+        {!userId ? (
+          <Button
+            asChild
+            className="rounded-full text-xl my-10"
+            size="lg"
+            variant="secondary"
+          >
+            <Link href="/sign-in">Login</Link>
+          </Button>
+        ) : (
+          <SignedIn>
+            <Button
+              asChild
+              className="rounded-full text-sm my-10"
+              size="sm"
+              variant="secondary"
+            >
+              <Link
+                href="/profile"
+                className="cursor-pointer capitalize text-2xl hover:scale-105 hover:text-white duration-200 link-underline hidden sm:flex"
+              >
+                Dashboard
+              </Link>
+            </Button>
+          </SignedIn>
+        )}
+      </div>
+      <div className="xl:m-10 m-2 flex items-center">
         <UserButton afterSignOutUrl="/" />
       </div>
       <SignedOut>
@@ -101,7 +130,23 @@ const Navbar = () => {
               </li>
             ))}
             <div>
-              <SignedOut>
+              {userId ? (
+                <SignedIn>
+                  <Button
+                    asChild
+                    className="rounded-full text-xl my-10"
+                    size="lg"
+                    variant="secondary"
+                  >
+                    <Link
+                      href="/profile"
+                      className="cursor-pointer capitalize text-2xl hover:scale-105 hover:text-white duration-200 link-underline sm:flex"
+                    >
+                      Dashboard
+                    </Link>
+                  </Button>
+                </SignedIn>
+              ) : (
                 <Button
                   asChild
                   className="rounded-full text-xl my-10"
@@ -111,7 +156,7 @@ const Navbar = () => {
                 >
                   <Link href="/sign-in">Login</Link>
                 </Button>
-              </SignedOut>
+              )}
             </div>
           </div>
         </ul>
