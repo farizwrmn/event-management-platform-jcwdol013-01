@@ -74,7 +74,7 @@ const Navbar = () => {
             asChild
             className="rounded-full text-xl my-10"
             size="lg"
-            variant="secondary"
+            variant="default"
           >
             <Link href="/sign-in">Login</Link>
           </Button>
@@ -84,19 +84,19 @@ const Navbar = () => {
               asChild
               className="rounded-full text-sm my-10"
               size="sm"
-              variant="secondary"
+              variant="default"
             >
               <Link
                 href="/profile"
-                className="cursor-pointer capitalize text-2xl hover:scale-105 hover:text-white duration-200 link-underline hidden sm:flex"
+                className="cursor-pointer capitalize text-2xl hover:scale-105 hover:text-white duration-200 link-underline hidden sm:flex bg-gradient-to-tr"
               >
-                Dashboard
+                My Profile
               </Link>
             </Button>
           </SignedIn>
         )}
       </div>
-      <div className="xl:m-10 m-2 flex items-center">
+      <div className="xl:mr-10 m-2 flex items-center">
         <UserButton afterSignOutUrl="/" />
       </div>
       <SignedOut>
@@ -136,14 +136,14 @@ const Navbar = () => {
                     asChild
                     className="rounded-full text-xl my-10"
                     size="lg"
-                    variant="secondary"
+                    variant="outline"
                   >
                     <Link
                       href="/profile"
-                      className="cursor-pointer capitalize text-2xl hover:scale-105 hover:text-white duration-200 link-underline sm:flex"
+                      className="cursor-pointer capitalize text-2xl hover:scale-105 hover:text-white duration-200 link-underline sm:flex bg-gradient-to-r"
                       onClick={() => setNav(!nav)}
                     >
-                      Dashboard
+                      My Profile
                     </Link>
                   </Button>
                 </SignedIn>
