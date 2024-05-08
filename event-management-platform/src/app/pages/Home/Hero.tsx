@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import Glide from "@glidejs/glide";
+import Link from "next/link";
 
 export default function Hero() {
   useEffect(() => {
@@ -27,30 +28,66 @@ export default function Hero() {
           data-glide-el="track"
         >
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29uY2VydHxlbnwwfHwwfHx8MA%3D%3D"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbmNlcnR8ZW58MHx8MHx8fDA%3D"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXZlbnRzfGVufDB8fDB8fHww"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvbmNlcnR8ZW58MHx8MHx8fDA%3D"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
+            <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F3cf7043f-d683-44c7-a85d-5e84684db0ce-1x9zwa.png&w=2048&q=75)] xl:h-[340px] w-[600px] relative bg-cover">
+              <Link
+                href="https://event-management-platform-jcwdol013-01.vercel.app/events/6634c99fc9a7245c27a435cf"
+                className="absolute bottom-0 px-4 py-3 bg-gray-800/50 w-full h-full"
+              >
+                <h1 className="text-white font-semibold text-4xl text-center h1-bold xl:pt-20">
+                  {" "}
+                  Dazemund.{" "}
+                </h1>
+                <p className="text-gray-200 text-center pt-32 xl:pt-20">
+                  Album Showcase <br />
+                  4th May, 2024 | 10:00 A.M
+                </p>
+              </Link>
+            </div>
+            <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2Fd29d50ce-0537-4af9-8144-437b92fc24d9-gel4mw.webp&w=2048&q=75)] xl:h-[340px] w-[600px] relative bg-cover">
+              <Link
+                href="https://event-management-platform-jcwdol013-01.vercel.app/events/6634c99fc9a7245c27a435cf"
+                className="absolute bottom-0 px-4 py-3 bg-gray-800/50 w-full h-full"
+              >
+                <h1 className="text-white font-semibold text-4xl text-center h1-bold xl:pt-20 text-red">
+                  {" "}
+                  Siksa Kubur{" "}
+                </h1>
+                <p className="text-gray-200 text-center pt-32 xl:pt-20">
+                  Anuar Joko <br />
+                  5th May, 2024 | 12:00 P.M
+                </p>
+              </Link>
+            </div>
+            <div className="bg-[url(http://localhost:3000/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2Fbf27d256-37e9-443e-a8ac-000e74bc5fe6-xw6i34.jpg&w=2048&q=75)] xl:h-[340px] w-[600px] relative bg-cover">
+              <Link
+                href="https://event-management-platform-jcwdol013-01.vercel.app/events/66362c0f737866729784306b"
+                className="absolute bottom-0 px-4 py-3 bg-gray-800/50 w-full h-full"
+              >
+                <h1 className="text-white font-semibold text-4xl text-center h1-bold xl:pt-20">
+                  {" "}
+                  Tokyo Cyber Punk{" "}
+                </h1>
+                <p className="text-gray-200 text-center pt-32 xl:pt-20">
+                  VR based tour by Tokyo Cyberpunk <br />
+                  5th June, 2024 | 12:30 A.M
+                </p>
+              </Link>
+            </div>
+            <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F6666db8e-9929-4129-b112-ede5df4595f0-3b1omg.jpg&w=2048&q=75)] xl:h-[340px] w-[600px] relative bg-cover">
+              <Link
+                href="https://event-management-platform-jcwdol013-01.vercel.app/events/6636116e927b558a7f44ee80"
+                className="absolute bottom-0 px-4 py-3 bg-gray-800/50 w-full h-full"
+              >
+                <h1 className="text-white font-semibold text-4xl text-center h1-bold xl:pt-20">
+                  {" "}
+                  Japan Foundation{" "}
+                </h1>
+                <p className="text-gray-200 text-center pt-32 xl:pt-20">
+                  Office Tour Jakarta <br />
+                  13th May, 2024 | 11:00 A.M
+                </p>
+              </Link>
+            </div>
           </ul>
         </div>
         <div
