@@ -18,6 +18,7 @@ export default authMiddleware({
     "/Contact",
     "/assets/icons/search.svg",
     "/assets/images/memphis-mini.png",
+    "/assets/images/serious.png",
   ],
   ignoredRoutes: [
     "/api/webhook/clerk",
