@@ -71,7 +71,7 @@ module.exports = withUt({
       },
       backgroundImage: {
         "memphis-mini": "url('/assets/images/memphis-mini.png')",
-        "hero-img": "url('/assets/images/hero.png')",
+        serious: "url('/assets/images/serious.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
