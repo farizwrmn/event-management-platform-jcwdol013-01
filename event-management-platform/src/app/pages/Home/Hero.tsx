@@ -45,7 +45,7 @@ export default function Hero() {
             </div>
             <div className="bg-[url(https://event-management-platform-jcwdol013-01.vercel.app/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2Fd29d50ce-0537-4af9-8144-437b92fc24d9-gel4mw.webp&w=2048&q=75)] xl:h-[340px] h-[240px] w-[600px] relative bg-cover">
               <Link
-                href="https://event-management-platform-jcwdol013-01.vercel.app/events/6634c99fc9a7245c27a435cf"
+                href="https://event-management-platform-jcwdol013-01.vercel.app/events/6634d857ec3d2c4869434b9b"
                 className="absolute bottom-0 px-4 py-3 bg-gray-800/50 w-full h-full"
               >
                 <h1 className="text-white font-semibold text-4xl text-center h1-bold xl:pt-20 text-red">

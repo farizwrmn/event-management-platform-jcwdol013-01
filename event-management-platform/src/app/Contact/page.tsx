@@ -39,7 +39,10 @@ const Contact = () => {
             </header>
           </div>
           <div className="flex justify-end gap-2 p-6 pt-0">
-            <button className="inline-flex h-10 flex-1 items-center justify-center gap-2 justify-self-center whitespace-nowrap rounded bg-emerald-50 px-5 text-sm font-medium tracking-wide text-emerald-500 transition duration-300 hover:bg-emerald-100 hover:text-emerald-600 focus:bg-emerald-200 focus:text-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-100 disabled:text-emerald-400 disabled:shadow-none">
+            <Link
+              href="https://wa.me/6281298606155"
+              className="inline-flex h-10 flex-1 items-center justify-center gap-2 justify-self-center whitespace-nowrap rounded bg-emerald-50 px-5 text-sm font-medium tracking-wide text-emerald-500 transition duration-300 hover:bg-emerald-100 hover:text-emerald-600 focus:bg-emerald-200 focus:text-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-100 disabled:text-emerald-400 disabled:shadow-none"
+            >
               <span className="order-2">Send message</span>
               <span className="relative only:-mx-5">
                 <svg
@@ -63,7 +66,7 @@ const Contact = () => {
                   />
                 </svg>
               </span>
-            </button>
+            </Link>
           </div>
           <div className="overflow-hidden rounded bg-white text-center text-slate-500 shadow-md shadow-slate-200">
             <figure className="p-6 pb-0">
@@ -88,7 +91,10 @@ const Contact = () => {
               </header>
             </div>
             <div className="flex justify-end gap-2 p-6 pt-0">
-              <button className="inline-flex h-10 flex-1 items-center justify-center gap-2 justify-self-center whitespace-nowrap rounded bg-emerald-50 px-5 text-sm font-medium tracking-wide text-emerald-500 transition duration-300 hover:bg-emerald-100 hover:text-emerald-600 focus:bg-emerald-200 focus:text-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-100 disabled:text-emerald-400 disabled:shadow-none">
+              <Link
+                href="mailto:farizwarman@gmail.com"
+                className="inline-flex h-10 flex-1 items-center justify-center gap-2 justify-self-center whitespace-nowrap rounded bg-emerald-50 px-5 text-sm font-medium tracking-wide text-emerald-500 transition duration-300 hover:bg-emerald-100 hover:text-emerald-600 focus:bg-emerald-200 focus:text-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-100 disabled:text-emerald-400 disabled:shadow-none"
+              >
                 <span className="order-2">Send Email</span>
                 <span className="relative only:-mx-5">
                   <svg
@@ -112,7 +118,7 @@ const Contact = () => {
                     />
                   </svg>
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

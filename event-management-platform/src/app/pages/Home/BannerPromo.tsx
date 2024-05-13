@@ -4,7 +4,7 @@ import { Fa1, Fa2, Fa3 } from "react-icons/fa6";
 export default function BannerPromo() {
   return (
     <>
-      <div className="lg:p-20 p-2 mb-12">
+      <div className="lg:p-20 p-2 mt-10 lg:mt-5 mb-12">
         <Link href="/">
           <img
             className="relative w-full rounded-2xl h-40 object-cover  shadow-2xl"

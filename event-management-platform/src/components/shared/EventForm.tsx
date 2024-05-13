@@ -144,22 +144,6 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
         <div className="flex flex-col gap-5 sm:flex-row">
           <FormField
             control={form.control}
-            name="description"
-            render={({ field }) => (
-              <FormItem className="w-full">
-                <FormControl className="h-72">
-                  <Textarea
-                    placeholder="Description"
-                    {...field}
-                    className="textarea rounded-2xl"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
             name="imageUrl"
             render={({ field }) => (
               <FormItem className="w-full">
@@ -174,33 +158,24 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
               </FormItem>
             )}
           />
-        </div>
-        <div className="flex flex-col gap-5 sm:flex-row">
           <FormField
             control={form.control}
-            name="location"
+            name="description"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormControl>
-                  <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-gray-50 px-4 py-2">
-                    <Image
-                      src="../../../assets/icons/location-grey.svg"
-                      alt="calendar"
-                      width={24}
-                      height={24}
-                    />
-                    <Input
-                      placeholder="Event Location or Online"
-                      {...field}
-                      className="input-field"
-                    />
-                  </div>
+                <FormControl className="h-72">
+                  <Textarea
+                    placeholder="Description"
+                    {...field}
+                    className="textarea rounded-2xl"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
         </div>
+
         <div className="flex flex-col gap-5 sm:flex-row">
           <FormField
             control={form.control}
@@ -234,6 +209,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
               </FormItem>
             )}
           />
+
           <FormField
             control={form.control}
             name="endDateTime"
@@ -259,6 +235,32 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                       dateFormat="dd/MM/YYYY h:mm aa"
                       wrapperClassName="datePicker"
                       className="w-full flex"
+                    />
+                  </div>
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
+        <div className="flex flex-col gap-5 sm:flex-row">
+          <FormField
+            control={form.control}
+            name="location"
+            render={({ field }) => (
+              <FormItem className="w-full">
+                <FormControl>
+                  <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-gray-50 px-4 py-2">
+                    <Image
+                      src="../../../assets/icons/location-grey.svg"
+                      alt="calendar"
+                      width={24}
+                      height={24}
+                    />
+                    <Input
+                      placeholder="Event Location or Online"
+                      {...field}
+                      className="input-field"
                     />
                   </div>
                 </FormControl>
@@ -346,7 +348,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
         </div>
         <Button
           type="submit"
-          className="bg-green-500 hover:bg-green-800 button col-span-2 w-full"
+          className="bg-green-700 hover:bg-green-500 button col-span-2 w-full"
           size="lg"
           disabled={form.formState.isSubmitting}
         >
