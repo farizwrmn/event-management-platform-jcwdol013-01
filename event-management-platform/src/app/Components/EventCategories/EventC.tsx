@@ -56,7 +56,7 @@ const Trending = () => {
                 <div className="p-6 hover:bg-blue-50 rounded-lg transition-all duration-200">
                     <Image src={Event4} alt="Event4" className="rounded-3xl" />
                     <h1 className="mt-[1rem] text-center text-[24px] text-black font-semibold">
-                    <span className="text-blue-900">EXHIBIITON</span>
+                    <span className="text-blue-900">EXHIBITION</span>
                     </h1>
                     <p className="mt-[0.1rem] text-black text-opacity-60 text-center">
                     Enjoy priority access to exhibitions showcasing art, culture, and innovation, 
