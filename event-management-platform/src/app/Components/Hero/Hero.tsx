@@ -6,8 +6,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import About1 from "@/app/AboutImg/About1.png";
 import Slide3 from "@/app/AboutImg/Slide3.png";
-import { SiEventbrite } from "react-icons/si";
-import { FaCalendarDays } from "react-icons/fa6";
+// import { SiEventbrite } from "react-icons/si";
+// import { FaCalendarDays } from "react-icons/fa6";
+// import { Button } from '@/components/ui/button';
 
 
 const responsive = {
@@ -29,7 +30,7 @@ const responsive = {
   };
 
 const Hero = () => {
-  return (
+  return ( 
     <Carousel
         additionalTransfrom={0}
         arrows={false}
@@ -45,35 +46,35 @@ const Hero = () => {
                 <Image src={About1} alt="About1"/>
                 <div>
                     <h1 className="text-[100px] leading -[3rem]font-semibold text-sky-400">askEvent</h1>
-                    <h1 className="text-[28px] leading-[3rem] text-slate-600 font-bold">
+                    <h2 className="text-[28px] leading-[3rem] text-slate-600 font-bold">
                         Discover the Ultimate Event with the <br /> Best Event Finder Web & App
-                    </h1>
-                    <p className="mt-[1rem] text-slate-500 text-opacity-90 text-[18px]">
+                    </h2>
+                    <div className="mt-[1rem] text-slate-500 text-opacity-90 text-[18px]">
                     Experience limitless entertainment with askEvent, your ultimate event guide. 
                     Stay updated on the latest movies, concerts, seminars, and more with its comprehensive listings. 
                     Easily create and manage your own events with user-friendly features.
                     Stay connected, stay informed, and make every experience unforgettable with askEvent, the Best Event Finder Web & App.
-                    </p>
-                    <div className="flex flex-wrap gap-4">
-                       <button className="mt-4 px-6 py-2 sm:px-8 sm:py-3 text-[14px] sm:text-[16px] bg-blue-700
-                    transition-all duration-200 hover:bg-blue-900 flex items-center rounded-md space-x-2 text-white">
-                        <span>
-                           <SiEventbrite className="w-[1.3rem] h-[1.3rem] sm:w-[.7rem] sm:h-[1.7rem]"/>
-                        </span>
-                        <span className="font-bold">
-                        Snatch your spot now!
-                        </span>
-                    </button>
-                    <button className="mt-4 px-6 py-2 sm:px-8 sm:py-3 text-[14px] sm:text-[16px] bg-teal-700
-                    transition-all duration-200 hover:bg-teal-900 flex items-center rounded-md space-x-2 text-white">
-                        <span>
-                           <FaCalendarDays className="w-[1.3rem] h-[1.3rem] sm:w-[.7rem] sm:h-[1.7rem]"/>
-                        </span>
-                        <span className="font-bold">
-                        Create your Event!
-                        </span>
-                    </button> 
                     </div>
+                    {/* <div className="flex flex-wrap gap-4">
+                       <Button className="mt-4 px-6 py-2 sm:px-8 sm:py-3 text-[14px] sm:text-[16px] bg-blue-700
+                    transition-all duration-200 hover:bg-blue-900 flex items-center rounded-md space-x-2 text-white">
+                        <div>
+                           <SiEventbrite className="w-[1.3rem] h-[1.3rem] sm:w-[.7rem] sm:h-[1.7rem]"/>
+                        </div>
+                        <div className="font-bold">
+                        Snatch your spot now!
+                        </div>
+                    </Button>
+                    <Button className="mt-4 px-6 py-2 sm:px-8 sm:py-3 text-[14px] sm:text-[16px] bg-teal-700
+                    transition-all duration-200 hover:bg-teal-900 flex items-center rounded-md space-x-2 text-white">
+                        <div>
+                           <FaCalendarDays className="w-[1.3rem] h-[1.3rem] sm:w-[.7rem] sm:h-[1.7rem]"/>
+                        </div>
+                        <div className="font-bold">
+                        Create your Event!
+                        </div>
+                    </Button> 
+                    </div> */}
                 </div>
             </div>
         </div>
@@ -85,16 +86,16 @@ const Hero = () => {
             <h1 className="text-[18px] leading-[3rem] text-slate-600 font-bold">
                 Discover the Ultimate Event with the Best Event Finder Web & App
             </h1>
-              <p className="text-slate-800 text-lg mt-4" style={{ textAlign: 'center' }}>
+              <div className="text-slate-800 text-lg mt-4" style={{ textAlign: 'center' }}>
                   Embark on an unforgettable journey of entertainment with askEvent, your ultimate gateway to immersive experiences. Why choose us? <br />
-                  <ol style={{ display: 'inline-block', textAlign: 'left' }}>
+                  <ul style={{ display: 'inline-block', textAlign: 'left' }}>
                     <li> 1. Effortless Exploration: Easily explore diverse events, from movies to concerts, with our intuitive interface. </li>
                     <li> 2. Secure Sanctuary: Trust in our rigorous verification to ensure a scam-free experience. </li>
                     <li> 3. Empowerment: Take control of your events effortlessly with user-friendly features. </li>
-                  </ol> <br />
+                  </ul> <br />
                   Stay connected, stay informed, and let askEvent redefine the way you experience events. <br />
                   Trust askEvent, the Best Event Finder Web & App for a journey filled with unparalleled entertainment delights.
-              </p>
+              </div>
           </div>
         </div>
 

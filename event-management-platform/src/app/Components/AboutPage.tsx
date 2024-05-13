@@ -1,12 +1,14 @@
 import React from 'react'
 import Hero from './Hero/Hero';
-import EventCategories from './EventCategories/EventCategories';
+import Trending from './Trending/Trending';
+// import EventCategories from './EventCategories/EventCategories';
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
         <Hero />
-        <EventCategories />
+        <Trending />
+        {/* <EventCategories /> */}
     </div>
   );
 };

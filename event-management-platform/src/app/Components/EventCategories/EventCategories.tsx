@@ -1,50 +1,56 @@
-import React from 'react'
-import EventCard from '../Helper/EventCard';
+// "use client";
 
-const EventCategories = () => {
-  return (
-    <div className="pt-[5rem] pb-[3rem] ">
-        <h1 className="text-black text-center text-[25px] md:text-[35px] font-semibold w-[80%] mx-auto"> Event Categories</h1>
-         <div className="pt-[2rem] md:pt-[3rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2
-         lg:grid-cols-3 xl:grid-cols-4 gap-[2rem]">
-            <div>
-                <EventCard 
-                      image="/AboutImg/Event1.png"
-                      Event="Concert"
-                      Visitor="max 50.000 pax"
-                      height="h-[300px]" title={''}                />
-            </div>
-            <div>
-                <EventCard 
-                      image="/AboutImg/Event2.png"
-                      Event="Movie/Show"
-                      Visitor="max 50.000 pax"
-                      height="h-[300px]" title={''}                />
-            </div>
-            <div>
-                <EventCard 
-                      image="/AboutImg/Event3.png"
-                      Event="Seminar/Workshop"
-                      Visitor="max 50.000 pax"
-                      height="h-[300px]" title={''}                />
-            </div>
-            <div>
-                <EventCard 
-                      image="/AboutImg/Event4.png"
-                      Event="Concert"
-                      Visitor="max 50.000 pax"
-                      height="h-[300px]" title={''}                />
-            </div>
-            <div>
-                <EventCard 
-                      image="/AboutImg/Event5.png"
-                      Event="Sport Competition"
-                      Visitor="max 50.000 pax"
-                      height="h-[300px]" title={''}                />
-            </div>
-         </div>
-    </div>
-  );
-};
+// import React from 'react';
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
+// import EventCard from './EventCard';
 
-export default EventCategories;
+// const responsive = {
+//     desktop: {
+//       breakpoint: { max: 3000, min: 1324 },
+//       items: 4,
+//       slidesToSlide: 1,
+//     },
+//     tablet: {
+//       breakpoint: { max: 1324, min: 764 },
+//       items: 2,
+//       slidesToSlide: 1,
+//     },
+//     mobile: {
+//       breakpoint: { max: 764, min: 0 },
+//       items: 1,
+//       slidesToSlide: 1,
+//     }
+//   };
+
+// const EventCategories = () => {
+//   return (
+//     <div className="pt-[3rem] pb-[3rem]">
+//         <h1 className="text-[30px] md:text-[35px] lg:text-[45px] xl:text-[50px] 
+//         uppercase font-bold text-gray-900 md:leading-[4rem] leading-[3rem] text-center">
+//             <span className="text-blue-900">Event</span> Categories
+//         </h1>
+//         <div className="w-[80%] mt-[4rem] mx-auto">
+//             <Carousel 
+//             additionalTransfrom={0}
+//             arrows={true}
+//             autoPlay={true}
+//             autoPlaySpeed={4000}
+//             centerMode={false}
+//             infinite
+//             responsive={responsive}
+//             itemClass="item"
+//             showDots={false}
+//             >
+//                 <EventCard 
+//                 title="Concert" 
+//                 image="/event-management-platform/public/assets/images/Event1.png"
+//                 nearestschedule="18-19 May"
+//                 audience="50.000 pax" />
+//             </Carousel>
+//         </div>
+//     </div>
+//   );
+// };
+
+// export default EventCategories;
